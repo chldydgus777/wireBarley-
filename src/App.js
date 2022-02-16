@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Exchange from 'components/ExchangeCalculation';
+import styled from 'styled-components';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Box>
+        <Exchange/>
+      </Box>
     </div>
   );
 }
+
+const  Box = styled.div`
+margin: 1rem;
+align-items: center;
+display: flex;
+`;
 
 export default App;
